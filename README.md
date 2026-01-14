@@ -57,6 +57,8 @@ import {Component} from "path";
 -configure Babel
 -configure parcel config file to disable default babel transpilation
 -Jest Configuration
+-jest - npm jest --init
+-Install Jsdom library
 
 
 
