@@ -45,5 +45,20 @@ import {Component} from "path";
 -Selector
 
 
+#Type of testing (Developer)
+-Unit Testing
+-Integration testing
+-End to End testing- e2e testing
+
+#Setting up testing in our app
+-install React Testing Library 
+-Installed jest
+-Installed babel dependencies
+-configure Babel
+
+
+
+
+
 
 
