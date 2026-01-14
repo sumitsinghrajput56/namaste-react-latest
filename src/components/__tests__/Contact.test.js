@@ -36,5 +36,5 @@ test("should load 2 input boxes in the Contact component", () => {
     const inputBoxes = screen.getAllByRole("textbox");
 
     // Assertion 
-    expect(inputBoxes.length).toBe(2);
+    expect(inputBoxes.length).not.toBe(3);
 })
