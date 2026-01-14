@@ -15,8 +15,17 @@ test("should load contact us component", () => {
 test("should load button inside contact component", () => {
     render(<Contact/>);
 
-    const button = screen.getByRole("button");
+    const button = screen.getByText("Submit");
 
     // Assertion 
     expect(button).toBeInTheDocument();
+})
+
+test("should load placeholder name inside contact component", () => {
+    render(<Contact/>);
+
+    const inputName = screen.getByPlaceholderText("Name");
+
+    // Assertion 
+    expect(inputName).toBeInTheDocument();
 })
