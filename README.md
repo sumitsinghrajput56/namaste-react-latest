@@ -59,7 +59,9 @@ import {Component} from "path";
 -Jest Configuration
 -jest - npm jest --init
 -Install Jsdom library
-
+-Install @babel/preset-react - to make JSX work in test cases
+-include @babel/preset-react inside my babel config
+-Install @testing-library/jest-dom
 
 
 
