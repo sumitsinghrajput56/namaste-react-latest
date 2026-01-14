@@ -29,3 +29,12 @@ test("should load placeholder name inside contact component", () => {
     // Assertion 
     expect(inputName).toBeInTheDocument();
 })
+
+test("should load 2 input boxes in the Contact component", () => {
+    render(<Contact/>);
+
+    const inputBoxes = screen.getAllByRole("textbox");
+
+    // Assertion 
+    expect(inputBoxes.length).toBe(2);
+})
