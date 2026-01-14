@@ -55,6 +55,8 @@ import {Component} from "path";
 -Installed jest
 -Installed babel dependencies
 -configure Babel
+-configure parcel config file to disable default babel transpilation
+-Jest Configuration
 
 
 
