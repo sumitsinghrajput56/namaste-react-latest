@@ -35,10 +35,10 @@ const Body = () => {
     // Optional Chaning
     // Install Cros Extensions
     setListOfRestaurants(
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || []
     );
     setFilteredRestaurant(
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants || []
     );
   };
 
@@ -55,7 +55,8 @@ const Body = () => {
       </div>
     );
   }
-  return listOfRestaurants.length === 0 ? (
+  console.log("listOfRestaurants",listOfRestaurants);
+  return (!listOfRestaurants || listOfRestaurants.length === 0) ? (
     <Shimmer />
   ) : (
     <div className="body">
@@ -63,6 +64,7 @@ const Body = () => {
         <div className="search m-4 p-4">
           <input
             type="text"
+            data-testid="searchInput"
             className="border border-solid border-black"
             placeholder="Search Restaurants"
             value={searchText}
